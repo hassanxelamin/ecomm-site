@@ -1,4 +1,5 @@
 import { Head, HomePage, Products } from '/imports.js';
+import { initiateCheckout } from '../lib/payments.js'
 
 export default function Home() {
   return (
@@ -25,6 +26,20 @@ export default function Home() {
                   <p>${price}</p>
                   <p className="mt-4 text-xl">{description}</p>
                 </a>
+                <p>
+                  <button className={HomePage.button} onClick={() => {
+                    initiateCheckout({
+                      lineItems: [
+                        {
+                          price: id,
+                          quantity: 1
+                        }
+                      ]
+                    });
+                  }}>
+                    Buy Now
+                  </button>
+                </p>
               </li>
             )
           })}
