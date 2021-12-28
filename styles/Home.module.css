@@ -1,0 +1,26 @@
+
+.main {
+    @apply flex flex-col items-center justify-center w-full flex-1 px-20 text-center;
+}
+
+.grid {
+    @apply flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full items-stretch;
+}
+
+.card {
+    @apply p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600;
+}
+
+.title {
+    @apply text-6xl font-bold;
+}
+
+.metatitle {
+    @apply text-2xl font-bold;
+}
+
+@media (min-width: 960px) {
+    .card {
+        flex-basis: calc(33.33% - 2rem)
+    }
+}
