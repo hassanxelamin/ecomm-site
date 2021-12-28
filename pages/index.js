@@ -12,7 +12,7 @@ export default function Home() {
 
         <h1 className={HomePage.title}>Space Jelly Shop</h1>
 
-        <p className="mt-3 text-2xl">The best jellyfish swag on the web</p>
+        <p className="mt-3 text-2xl">The best jellyfish swag on the block</p>
 
         <ul className={HomePage.grid}>
           {Products.map(Products => {
