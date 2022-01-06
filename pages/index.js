@@ -1,9 +1,9 @@
-import useCart from '../hooks/use-cart.js';
+import { useCart } from '../hooks/use-cart.js';
 import { Head, HomePage, products } from '/imports.js';
 
 export default function Home() {
 
-  const { subtotal, totalItems, addToCart, checkout } = useCart();
+  const { addToCart } = useCart();
 
 
   return (
@@ -14,19 +14,9 @@ export default function Home() {
       </Head>
 
       <main className={HomePage.main}>
-
         <h1 className={HomePage.title}>Space Jelly Shop</h1>
 
         <p className="mt-3 text-2xl">The best jellyfish swag on the block</p>
-
-        {/* Shopping Cart + Checkout Button*/}
-        <p>
-          <strong>Items:</strong> {totalItems}
-          <br />
-          <strong>Total Cost:</strong> ${subtotal}
-          <br />
-          <button className={HomePage.button} onClick={checkout}>Check Out</button>
-        </p>
 
 
         {/* Product Cards */}

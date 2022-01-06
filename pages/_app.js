@@ -1,7 +1,16 @@
 import 'tailwindcss/tailwind.css'
+import Nav from '../components/nav.js';
+import { CartContext, useCartState } from '../hooks/use-cart.js'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  const cart = useCartState();
+
+  return (
+    <CartContext.Provider value={cart}>
+      <Nav />
+      <Component {...pageProps} />
+    </CartContext.Provider>
+  )
 }
 
 export default MyApp
