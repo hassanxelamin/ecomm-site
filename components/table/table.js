@@ -1,49 +1,63 @@
 import { React, useMemo } from "react"
 import { useTable } from "react-table"
+import { useCart } from '../../hooks/use-cart.js';
+import { products } from '/imports.js';
 
 const Table = () => {
 
-    const data = useMemo(
-        () => [
-            {
-                col1: 'Shirt',
-                col2: '1',
-                col3: '$24',
-                col4: '$24'
-            },
-            {
-                col1: 'Socks',
-                col2: '1',
-                col3: '$24',
-                col4: '$24'
-            },
-            {
-                col1: 'Shoes',
-                col2: '1',
-                col3: '$24',
-                col4: '$24'
-            },
-        ],
-        []
-    )
+    const { cartItems, updateItem } = useCart();
+
+    const data = cartItems.map(item => {
+
+        const Quantity = () => {
+
+            function handleOnSubmit(e) {
+                e.preventDefault();
+
+                const { currentTarget } = e;
+                const inputs = Array.from(currentTarget.elements);
+                const quantity = inputs.find(input => input.name === 'quantity')?.value
+
+                updateItem({
+                    id: item.id,
+                    quantity: quantity && parseInt(quantity)
+                });
+            }
+
+            return (
+                <form onSubmit={handleOnSubmit}>
+                    <input type="number" name="quantity" min={0} defaultValue={item.quantity} />
+                    <button>Update</button>
+                </form>
+            )
+        }
+
+        const product = products.find(({ id }) => id === item.id)
+        return {
+            ...item,
+            quantity: <Quantity />,
+            total: item.quantity * item.pricePerItem,
+            title: product.title
+        }
+    })
 
     const columns = useMemo(
         () => [
             {
                 Header: 'Product Name',
-                accessor: 'col1', // accessor is the "key" in the data
+                accessor: 'title', // accessor is the "key" in the data
             },
             {
                 Header: 'Quantity',
-                accessor: 'col2',
+                accessor: 'quantity',
             },
             {
                 Header: 'Price Per Item',
-                accessor: 'col3',
+                accessor: 'pricePerItem',
             },
             {
                 Header: 'Item Total',
-                accessor: 'col4',
+                accessor: 'total',
             },
         ],
         []

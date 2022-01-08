@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css'
-import Nav from '../components/nav.js';
+import Nav from '../components/nav/nav.js';
 import { CartContext, useCartState } from '../hooks/use-cart.js'
 
 function MyApp({ Component, pageProps }) {

@@ -1,11 +1,10 @@
 import Table from '../components/table/table.js';
+import { HomePage, products } from '/imports.js';
 import { useCart } from '../hooks/use-cart.js';
-import { Head, HomePage, products } from '/imports.js';
 
 export default function Home() {
 
     const { checkout } = useCart();
-
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
