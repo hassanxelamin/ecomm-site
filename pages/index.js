@@ -1,5 +1,6 @@
 import { useCart } from '../hooks/use-cart.js';
 import { Head, HomePage, products } from '/imports.js';
+import Link from 'next/link';
 
 export default function Home() {
 
@@ -25,12 +26,14 @@ export default function Home() {
             const { id, title, description, image, price } = products;
             return (
               <li key={id} className={HomePage.card}>
-                <a href="https://nextjs.org/docs">
-                  <img src={image} alt='t-shirt'></img>
-                  <h3 className={HomePage.metatitle}>{title}</h3>
-                  <p>${price}</p>
-                  <p className="mt-4 text-xl">{description}</p>
-                </a>
+                <Link href={`products/${id}`}>
+                  <a>
+                    <img src={image} alt='t-shirt'></img>
+                    <h3 className={HomePage.metatitle}>{title}</h3>
+                    <p>${price}</p>
+                    <p className="mt-4 text-xl">{description}</p>
+                  </a>
+                </Link>
 
                 {/* Add To Cart Button */}
                 <p className='flex justify-center'>
