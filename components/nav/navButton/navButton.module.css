@@ -1,0 +1,7 @@
+.wrap {
+    @apply text-secondary;
+}
+
+.button {
+    @apply cursor-pointer;
+}

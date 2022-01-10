@@ -15,10 +15,6 @@ export default function Home() {
       </Head>
 
       <main className={HomePage.main}>
-        <h1 className={HomePage.title}>Space Jelly Shop</h1>
-
-        <p className="mt-3 text-2xl">The best jellyfish swag on the block</p>
-
 
         {/* Product Cards */}
         <ul className={HomePage.grid}>

@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import '../styles/globals.css'
 import Nav from '../components/nav/nav.js';
 import { CartContext, useCartState } from '../hooks/use-cart.js'
 
@@ -7,8 +8,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <CartContext.Provider value={cart}>
-      <Nav />
-      <Component {...pageProps} />
+      <div className='bg-main text-secondary'>
+        <Nav />
+        <Component {...pageProps} />
+      </div>
     </CartContext.Provider>
   )
 }
