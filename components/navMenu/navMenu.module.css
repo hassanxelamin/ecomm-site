@@ -1,0 +1,45 @@
+.navigationbutton {
+    align-items: end;
+    display: flex;
+    font-size: 0;
+}
+
+.navigationdash {
+    align-items: center;
+    display: flex;
+    height: 26px;
+    position: relative;
+    width: 26px;
+} 
+
+.navigationdashes {
+    border-top: 1px solid;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform-style: preserve-3d;
+    transition: transform 1s ease;
+    width: 100%;
+}
+
+.navigationdashes:first-child {
+    transform: translate(-50%,-4px);
+}
+
+.navigationdashes:nth-child(2) {
+    display: block;
+    left: 0;
+    transform: none;
+}
+
+.navigationdashes:nth-child(3) {
+    transform: translate(-50%,4px);
+}
+
+.navigationtext {
+    display: block;
+    font-size: 1rem;
+    margin-left: 0.75rem;
+    transition: opacity .4s ease;
+}
+

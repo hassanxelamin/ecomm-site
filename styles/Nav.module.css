@@ -1,4 +1,4 @@
 
 .container {
-    @apply flex justify-between items-center w-auto;
+    @apply flex justify-between items-center px-[40px] h-[80px] fixed w-screen top-0 z-50;
 }

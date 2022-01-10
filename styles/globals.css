@@ -1,12 +1,20 @@
 @font-face {
-    font-family: 'pp_pangram_sans_roundedXBd';
-    src: url('./fonts/pppangramsansrounded-extrabold-webfont.woff') format('woff');
+    font-family: 'pp_neue_montreal_ttbook';
+    src: url('./fonts/ppneuemontreal-book-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_neue_montreal_ttregular';
+    src: url('./fonts/ppneuemontreal-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body {
-    font-family: 'pp_pangram_sans_roundedXBd';
-    font-size: 1.3rem;
-
+    font-family: 'pp_neue_montreal_ttregular';
+    font-size: 12px;
   }

@@ -1,24 +1,25 @@
 import React from 'react'
-import { FaShoppingCart } from 'react-icons/fa';
 import { useCart } from '../../hooks/use-cart.js'
+import { navButton } from '/imports.js';
+import Link from 'next/link';
 
 const NavButton = () => {
 
-    const { totalItems } = useCart();
+    const { totalItems, checkout } = useCart();
 
     return (
         <div>
             <div>
-                <button>
-                    <a className='flex items-center justify-between w-8 text-base'>
+                <Link href="/cart">
+                    <a className='flex items-center justify-center text-base text-[15px]'>
                         <div>
-                            <FaShoppingCart />
+                            Bag
                         </div>
-                        <div>
+                        <div className={navButton.navigationcounter}>
                             {totalItems}
                         </div>
                     </a>
-                </button>
+                </Link>
             </div>
         </div>
     )

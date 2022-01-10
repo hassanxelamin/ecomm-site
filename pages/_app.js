@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <CartContext.Provider value={cart}>
-      <div className='bg-main text-secondary'>
+      <div className='bg-main text-secondary min-w-screen'>
         <Nav />
         <Component {...pageProps} />
       </div>
