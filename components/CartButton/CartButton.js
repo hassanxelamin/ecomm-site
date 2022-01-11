@@ -1,6 +1,6 @@
 import React from 'react'
 import { useCart } from '../../hooks/use-cart.js'
-import { cartButtonStyles } from '/imports.js';
+import { cartButtonStyless } from '/imports.js';
 import Link from 'next/link';
 
 const CartButton = () => {
@@ -15,7 +15,7 @@ const CartButton = () => {
                         <div>
                             Bag
                         </div>
-                        <div className={cartButtonStyles.navigationcounter}>
+                        <div className={cartButtonStyless.navigationcounter}>
                             {totalItems}
                         </div>
                     </a>
