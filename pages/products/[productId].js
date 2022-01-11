@@ -1,4 +1,4 @@
-import { HomePage, products } from '/imports.js';
+import { products } from '/imports.js';
 import { useCart } from '../../hooks/use-cart.js';
 
 
@@ -11,7 +11,7 @@ export default function Product({ product }) {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
             <div className="flex items-center justify-center">
-                <div key={id} className={HomePage.card}>
+                <div key={id}>
                     <a>
                         <img src={image} alt='t-shirt'></img>
                     </a>
@@ -19,10 +19,10 @@ export default function Product({ product }) {
                     {/* Product Name, Description & Checkout Button */}
                 </div>
                 <div className='flex flex-col justify-between h-16 m-w-full'>
-                    <h3 className={HomePage.metatitle}>{title}</h3>
+                    <h3 >{title}</h3>
                     <p>${price}</p>
                     <p className="mt-4 text-xl">{description}</p>
-                    <button className={HomePage.button} onClick={() => {
+                    <button onClick={() => {
                         addToCart({
                             id
                         })
