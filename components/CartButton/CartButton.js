@@ -1,11 +1,9 @@
 import React from 'react'
-import { useCart } from '../../hooks/use-cart.js'
+
 import { cartButtonStyles } from '/imports.js';
 import Link from 'next/link';
 
 const CartButton = () => {
-
-    const { totalItems } = useCart();
 
     return (
         <div>
@@ -16,7 +14,7 @@ const CartButton = () => {
                             Bag
                         </div>
                         <div className={cartButtonStyles.navigationcounter}>
-                            {totalItems}
+
                         </div>
                     </a>
                 </Link>
