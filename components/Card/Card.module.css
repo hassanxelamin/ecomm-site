@@ -7,7 +7,7 @@
 }
 
 .card {
-    @apply text-left border grow;
+    @apply text-left border-t-[.5px] border-r-[.5px] border-b-[.5px] border-l-[.5px] grow relative;
 }
 
 .title {
@@ -15,7 +15,7 @@
 }
 
 .metatitle {
-    @apply text-2xl font-bold;
+    @apply text-[18px];
 }
 
 .button {

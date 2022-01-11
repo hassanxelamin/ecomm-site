@@ -9,3 +9,9 @@
     text-align: center;
     width: 28px;
 }
+
+@media (max-width: 767px) {
+    .cartname {
+        display: none;
+    }
+}

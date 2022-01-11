@@ -1,5 +1,27 @@
 .imagecontainer {
-   @apply w-full mt-20 mb-10 rounded-2xl ;
+   @apply w-full mt-20 mb-10 rounded-2xl bg-cover;
    background-image: url("../../public/images/header.png");
    background-position: center;
+}
+
+.fontone {
+   font-family: 'pp_editorial_newregular';
+}
+
+.fonttwo {
+   font-family: 'pp_neue_montreal_ttitalic';
+}
+
+.new {
+   @apply text-[10px] px-8 py-3 w-fit bg-white text-black rounded-3xl;
+}
+
+@media (max-width: 767px) {     
+   .newsize {
+      @apply text-[400%]
+   }
+
+   .new {
+      @apply text-[10px]
+   }
 }

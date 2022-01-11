@@ -36,10 +36,3 @@
     transform: translate(-50%,4px);
 }
 
-.navigationtext {
-    display: block;
-    font-size: 1rem;
-    margin-left: 0.75rem;
-    transition: opacity .4s ease;
-}
-

@@ -1,6 +1,7 @@
 import React from 'react'
 import { menuStyles } from '/imports.js';
 
+
 export default function Menu() {
 
     return (
@@ -9,9 +10,6 @@ export default function Menu() {
                 <span className={menuStyles.navigationdashes}></span>
                 <span className={menuStyles.navigationdashes}></span>
                 <span className={menuStyles.navigationdashes}></span>
-            </span>
-            <span className={menuStyles.navigationtext}>
-                Menu
             </span>
         </div>
     )

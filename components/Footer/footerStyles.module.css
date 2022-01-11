@@ -1,0 +1,29 @@
+.footerinput {
+    @apply text-left;
+    background: none;
+    border-radius: 0;
+    border: solid;
+    border-width: 0 0 1px;
+    color: currentColor;
+    font: inherit;
+    padding: 0 0 0.5rem;
+    pointer-events: auto;
+    transition: opacity .4s ease,visibility .4s ease;
+    width: 220px;
+}
+
+.footerinput:focus {outline:none;}
+
+.container {
+    @apply flex flex-wrap justify-between uppercase bg-black text-white px-[1rem] py-[4rem] text-[14px] mt-10;
+}
+
+@media (max-width: 767px) {     
+    .container {
+        @apply flex-col justify-between text-[18px];
+    }
+
+    .paddinglit {
+        @apply pb-[4rem]
+    }
+}

@@ -12,7 +12,7 @@ const CartButton = () => {
             <div>
                 <Link href="/cart">
                     <a className='flex items-center justify-center text-base text-[15px]'>
-                        <div>
+                        <div className={cartButtonStyles.cartname}>
                             Bag
                         </div>
                         <div className={cartButtonStyles.navigationcounter}>
