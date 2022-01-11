@@ -1,5 +1,5 @@
 import { navStyles } from '/imports.js';
-import CartButton from '../CartButton/CartButton.js';
+import CartButton from '../cartbutton/cartbutton.js';
 import Logo from '../Logo/Logo.js';
 import Menu from '../Menu/Menu.js';
 
