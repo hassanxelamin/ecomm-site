@@ -1,5 +1,5 @@
 .navigationbutton {
-    align-items: end;
+    align-items: flex-end;
     display: flex;
     font-size: 0;
 }

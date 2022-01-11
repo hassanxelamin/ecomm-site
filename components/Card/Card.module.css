@@ -1,14 +1,13 @@
-
 .main {
-    @apply flex flex-col items-center justify-center w-full flex-1 px-20 text-center;
+    @apply h-screen;
 }
 
 .grid {
-    @apply flex flex-wrap items-center justify-between max-w-4xl mt-6 sm:w-full items-stretch;
+    @apply flex flex-wrap items-center  sm:w-full items-stretch;
 }
 
 .card {
-    @apply p-6 mt-6 text-left border w-96 rounded-xl hover:text-secondary focus:text-secondary h-96;
+    @apply text-left border grow;
 }
 
 .title {

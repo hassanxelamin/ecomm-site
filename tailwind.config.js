@@ -5,12 +5,15 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'main': '#F1EBE7',
+      'main': '#f0ebe1',
       'secondary': '#2d2e39',
       'white': '#fff',
       'black': '#111'
     },
     extend: {},
+  },
+  backgroundImage: {
+    'hero': "url('/images/header.png')",
   },
   plugins: [],
 }

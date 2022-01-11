@@ -1,11 +1,11 @@
 import React from 'react'
 import { useCart } from '../../hooks/use-cart.js'
-import { navButton } from '/imports.js';
+import { cartButtonStyles } from '/imports.js';
 import Link from 'next/link';
 
-const NavButton = () => {
+const CartButton = () => {
 
-    const { totalItems, checkout } = useCart();
+    const { totalItems } = useCart();
 
     return (
         <div>
@@ -15,7 +15,7 @@ const NavButton = () => {
                         <div>
                             Bag
                         </div>
-                        <div className={navButton.navigationcounter}>
+                        <div className={cartButtonStyles.navigationcounter}>
                             {totalItems}
                         </div>
                     </a>
@@ -25,4 +25,4 @@ const NavButton = () => {
     )
 }
 
-export default NavButton;
+export default CartButton;

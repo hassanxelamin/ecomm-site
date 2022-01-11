@@ -1,0 +1,4 @@
+
+.container {
+    @apply flex justify-between items-center px-[40px] h-[80px] fixed w-full top-0 z-50;
+}

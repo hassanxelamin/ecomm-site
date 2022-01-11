@@ -1,6 +1,6 @@
 import Table from '../components/table/table.js';
 import { useCart } from '../hooks/use-cart.js';
-import { Head, HomePage, products } from '/imports.js';
+import { cartStyles } from '/imports.js';
 
 export default function Home() {
 
@@ -9,13 +9,13 @@ export default function Home() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <main className={HomePage.main}>
+            <main className={cartStyles.main}>
                 {/* Product Cards */}
-                <div className={HomePage.grid}>
+                <div className={cartStyles.grid}>
                     <Table />
                     {/* Add To Cart Button */}
                     <p className='flex justify-center'>
-                        <button className={HomePage.button} onClick={() => {
+                        <button className={cartStyles.button} onClick={() => {
                             checkout()
                         }}>
                             Check Out
