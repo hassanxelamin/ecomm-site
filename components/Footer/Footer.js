@@ -14,10 +14,10 @@ export default function Footer() {
             </div>
             <div className={cn(footerStyles.paddinglit, 'flex gap-x-8')}>
                 <ul>
-                    <li class="pb-[1rem]">
+                    <li className="pb-[1rem]">
                         <a href="/">Shop</a>
                     </li>
-                    <li class="pb-[1rem]">
+                    <li className="pb-[1rem]">
                         <a href="/">Lookbook</a>
                     </li>
                     <li>
@@ -25,10 +25,10 @@ export default function Footer() {
                     </li>
                 </ul>
                 <ul>
-                    <li class="pb-[1rem]">
+                    <li className="pb-[1rem]">
                         <a href="/">Legal</a>
                     </li>
-                    <li class="pb-[1rem]">
+                    <li className="pb-[1rem]">
                         <a href="/">Shopping Bag</a>
                     </li>
                     <li>
@@ -51,7 +51,7 @@ export default function Footer() {
 
             <div>
                 <div>
-                    <h2 class="pb-[0.5rem]">Social Media</h2>
+                    <h2 className="pb-[0.5rem]">Social Media</h2>
                     <ul className='flex justify-around w-[94px]'>
                         <li>
                             <a href="/" rel="noopener" target="_blank">

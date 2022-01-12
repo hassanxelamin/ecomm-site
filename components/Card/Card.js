@@ -25,14 +25,6 @@ export default function Card() {
                                     </a>
                                 </Link>
 
-                                {/* <p className='flex justify-center'>
-                                    <button className={productCard.button} onClick={() => {
-                                        addToCart({ id })
-                                    }}>
-                                        Add To Cart
-                                    </button>
-                                </p> */}
-
                             </li>
                         )
                     })
