@@ -1,0 +1,55 @@
+.main {
+    @apply flex flex-col justify-center items-center bg-black w-full h-full rounded-3xl px-40;
+}
+
+
+.images {
+    @apply w-20 rounded-3xl;
+}
+
+
+.seperator {
+    @apply my-10;
+    border-top: 1px solid hsla(0,0%,100%,.2);
+}
+
+.button {
+    @apply w-5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #141414;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    color: #fff;
+    height: 2.1rem;
+    margin-left: 1rem;
+    pointer-events: auto;
+    text-align: center;
+    width: 6rem;
+}
+
+@media (max-width: 767px) {     
+    .main {
+        @apply px-8 text-[1rem];
+    }
+    .images {
+        @apply w-24;
+    }
+}
+
+.checkoutitem {
+    @apply w-5;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #141414;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    color: #fff;
+    height: 2.1rem;
+    margin-left: 1rem;
+    pointer-events: auto;
+    text-align: center;
+    width: 3rem;
+}

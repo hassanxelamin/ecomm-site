@@ -1,0 +1,56 @@
+
+
+.containertwo {
+    @apply flex justify-center items-center pt-[8rem] pb-[80px] pl-[80px];
+}
+
+.image {
+    @apply rounded-3xl w-[30rem] mr-[10rem];
+}
+
+.title {
+    @apply text-[50px] mb-[0.5rem];
+    font-family: 'pp_editorial_newregular';
+}
+
+.button {
+    @apply py-5 px-1;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #141414;
+    border: 1px solid #fff;
+    border-radius: 5rem;
+    color: #fff;
+    pointer-events: auto;
+    text-align: center;
+    width: 10rem;
+}
+
+.buttoncontainer {
+    @apply flex;
+}
+
+@media (max-width: 767px) {    
+
+    .container {
+        @apply flex flex-col items-center justify-center min-h-screen;
+    }
+
+    .containertwo {
+        @apply flex flex-col items-center justify-between  p-8 pt-[8rem];
+    } 
+
+    .image {
+        @apply rounded-3xl;
+    }
+
+    .title {
+        @apply flex justify-center text-[48px] mt-[1rem];
+    }
+
+    .buttoncontainer {
+        @apply flex justify-center;
+    }
+    
+}

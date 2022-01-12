@@ -48,6 +48,18 @@ export function useCartState() {
         })
     };
 
+    function updateItem({ id, quantity }) {
+        updateCart(prev => {
+            let cartState = { ...prev };
+
+            if (cartState.products[id]) {
+                cartState.products[id].quantity = quantity;
+            }
+
+            return cartState;
+        })
+    }
+
     // Creates array to calculate total cost & quantity
     // 1: We created an object called "cartItems" to store the 
     //    independent values of the total cost and total quantity.
@@ -103,9 +115,11 @@ export function useCartState() {
     return {
         cart,
         updateCart,
-        subtotal,
+        cartItems,
         totalItems,
         addToCart,
+        updateItem,
+        subtotal,
         checkout
     };
 }

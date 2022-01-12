@@ -17,7 +17,7 @@ export default function Hero() {
                                 <span className={heroStyles.fontone}>in every</span> <span className={heroStyles.fonttwo}>season</span>
                             </div>
                             <div className='flex justify-center uppercase mt-[10px]'>
-                                <Link href="/">
+                                <Link href="#card">
                                     <a className={cn(heroStyles.new, 'border text-center flex justify-center w-fit rounded-3xl')}>
                                         Shop Now
                                     </a>

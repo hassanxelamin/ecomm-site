@@ -8,7 +8,7 @@ export default function Card() {
     const { addToCart } = useCart();
 
     return (
-        <section className='main'>
+        <section className='main' id="card">
             <ul className={productCard.grid}>
                 {
                     products.map(products => {
@@ -24,7 +24,6 @@ export default function Card() {
                                         </div>
                                     </a>
                                 </Link>
-
 
                                 {/* <p className='flex justify-center'>
                                     <button className={productCard.button} onClick={() => {

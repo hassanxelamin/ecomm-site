@@ -6,4 +6,5 @@ export { default as cartButtonStyles } from './components/cartbutton/cartbutton.
 export { default as footerStyles } from './components/Footer/footerStyles.module.css';
 export { default as heroStyles } from './components/Hero/Hero.module.css';
 export { default as cartStyles } from './pages/cart/Cart.module.css';
+export { default as productStyles } from './pages/products/products.module.css';
 export { default as products } from '/products.json';

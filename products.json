@@ -1,22 +1,22 @@
 [
     {
         "id": "price_1KBip8KoVJaPayW9mZ8b0kpX",
-        "title": "Space Jelly Combo",
-        "description": "Show your love for Cosmo with a tshirt and sticker combo pack!",
+        "title": "Facial Wash",
+        "description": "Your skin reacts different in the winter from summer, our products treat your skin with the proper vitamins for every season so it's healthy year-round.",
         "image": "/images/wash.png",
         "price": 25.00
     },
     {
         "id": "price_1KBihDKoVJaPayW9WXT6HiZp",
-        "title": "Space Jelly T-Shirt",
-        "description": "Bring Cosmo the space Jellyfish to your wardrobe with this high quality tshirt.",
+        "title": "Facial Oil",
+        "description": "Your skin reacts different in the winter from summer, our products treat your skin with the proper vitamins for every season so it's healthy year-round.",
         "image": "/images/oil.png",
         "price": 20.00
     },
     {
         "id": "price_1KBio8KoVJaPayW9wiOWLKJg",
-        "title": "Space Jelly Stickers",
-        "description": "Add some flair to your laptop with a sticker of Cosmo the Space Jellyfish.",
+        "title": "Facial Moisterizer",
+        "description": "Your skin reacts different in the winter from summer, our products treat your skin with the proper vitamins for every season so it's healthy year-round.",
         "image": "/images/cream.png",
         "price": 10.00
     }

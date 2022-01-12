@@ -1,5 +1,6 @@
 import { products } from '/imports.js';
 import { useCart } from '../../hooks/use-cart.js';
+import { productStyles } from '../../imports.js';
 
 
 export default function Product({ product }) {
@@ -9,25 +10,24 @@ export default function Product({ product }) {
     const { addToCart } = useCart();
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <div className="flex items-center justify-center">
-                <div key={id}>
-                    <a>
-                        <img src={image} alt='t-shirt'></img>
-                    </a>
+        <div className={productStyles.containertwo}>
+            <div key={id}>
+                <a>
+                    <img className={productStyles.image} src={image} alt='t-shirt'></img>
+                </a>
 
-                    {/* Product Name, Description & Checkout Button */}
-                </div>
-                <div className='flex flex-col justify-between h-16 m-w-full'>
-                    <h3 >{title}</h3>
-                    <p>${price}</p>
-                    <p className="mt-4 text-xl">{description}</p>
+                {/* Product Name, Description & Checkout Button */}
+            </div>
+            <div className='flex flex-col justify-between m-w-full'>
+                <h3 className={productStyles.title}>{title}</h3>
+                <p className="mt-4 text-xl w-[20rem] mb-[2rem]">{description}</p>
+                <div className={productStyles.buttoncontainer}>
                     <button onClick={() => {
                         addToCart({
                             id
                         })
-                    }}>
-                        Add To Cart
+                    }} className={productStyles.button}>
+                        Add To Cart - ${price}
                     </button>
                 </div>
             </div>
