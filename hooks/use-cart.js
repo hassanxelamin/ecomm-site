@@ -102,6 +102,7 @@ export function useCartState() {
     // returning an array of price: item.id & quantity: item.quantity
     // that will service as the lineItems for our stripe checkout process
     function checkout() {
+        console.log('made it this far');
         initiateCheckout({
             lineItems: cartItems.map(item => {
                 return {
