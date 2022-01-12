@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
 
             <div>
-                <div className={footerStyles.paddinglit}><h2 class="pb-[0.5rem]">Subscribe to the newsletter</h2>
+                <div className={footerStyles.paddinglit}><h2 className="pb-[0.5rem]">Subscribe to the newsletter</h2>
                     <form>
                         <input className={footerStyles.footerinput} placeholder="Your e-mail" required="" type="email" />
                         <button>
