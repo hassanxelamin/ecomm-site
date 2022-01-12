@@ -1,23 +1,23 @@
 [
     {
-        "id": "price_1KBip8KoVJaPayW9mZ8b0kpX",
+        "id": "price_1KH25ZKoVJaPayW9x7Gavihf",
         "title": "Facial Wash",
         "description": "Your skin reacts different in the winter from summer, our products treat your skin with the proper vitamins for every season so it's healthy year-round.",
         "image": "/images/wash.png",
-        "price": 25.00
+        "price": 20.00
     },
     {
-        "id": "price_1KBihDKoVJaPayW9WXT6HiZp",
+        "id": "price_1KH26LKoVJaPayW9fRsFnGcv",
         "title": "Facial Oil",
         "description": "Your skin reacts different in the winter from summer, our products treat your skin with the proper vitamins for every season so it's healthy year-round.",
         "image": "/images/oil.png",
         "price": 20.00
     },
     {
-        "id": "price_1KBio8KoVJaPayW9wiOWLKJg",
+        "id": "price_1KH27PKoVJaPayW9D2EmtmPJ",
         "title": "Facial Moisterizer",
         "description": "Your skin reacts different in the winter from summer, our products treat your skin with the proper vitamins for every season so it's healthy year-round.",
         "image": "/images/cream.png",
-        "price": 10.00
+        "price": 20.00
     }
 ]
