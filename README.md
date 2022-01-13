@@ -12,7 +12,7 @@ This website is ecommerce store for the fictional skincare brand, Aurora, powere
 
 ![cart.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a32dd06-7c2b-4b97-bac1-a051811c1d0e/cart.png)
 
-| ![Mobile](images/mobilehero.PNG.png) | ![Timer](screenshots/02-Timer.png) |
+| ![Mobile](public/images/mobilehero.png) | ![Timer](screenshots/02-Timer.png) |
 | :---------------------------------------: | :--------------------------------: |
 |               Mobile               |         _Countdown Timer_          |
 
