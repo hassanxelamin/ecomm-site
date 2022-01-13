@@ -38,8 +38,6 @@ Some items of note:
 - A delete button on the cart. Right now, it just updates the quantity of the cart.
 - Integrate MailChimp as a newsletter provider.
 
----
-
 ## **⚡️ Technologies**
 
 - Next.JS
