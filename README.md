@@ -1,23 +1,16 @@
 
 ## **Project Description**
 
----
-
 This website is ecommerce store for the fictional skincare brand, Aurora, powered by Stripe API. It is built with Next.JS and uses Tailwind for styling. 
 
 ⚡️ **[View Live Demo](https://ecomm-site.vercel.app/)** ⚡️
 
----
 
 ## Screenshots
 
 ![desktop-hero.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fed0ec44-c23f-4f76-b17b-bc78fbaead3c/desktop-hero.png)
 
 ![cart.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a32dd06-7c2b-4b97-bac1-a051811c1d0e/cart.png)
-
-
-
-
 
 ### **Development Process**
 
