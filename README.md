@@ -8,13 +8,9 @@ This website is ecommerce store for the fictional skincare brand, Aurora, powere
 
 ## Screenshots
 
-![desktop-hero.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fed0ec44-c23f-4f76-b17b-bc78fbaead3c/desktop-hero.png)
-
-![cart.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1a32dd06-7c2b-4b97-bac1-a051811c1d0e/cart.png)
-
-| ![Mobile](public/images/mobilehero.PNG) | ![Timer](screenshots/02-Timer.png) |
-| :---------------------------------------: | :--------------------------------: |
-|               Mobile               |         _Countdown Timer_          |
+| ![Mobile](public/images/mobilehero.PNG) | ![Desktop](public/images/desktop-hero.PNG) |
+| :---------------------------------------: | :------------------------------------: |
+|                Mobile                     |                Desktop                 |
 
 ### **Development Process**
 
@@ -26,7 +22,7 @@ Requirements
 - Create a custom React hook
 - Use the React Context API to manage global state
 - Store and persist app state with localstorage
-- Integrate Stripe Checkout to let people purchase your products
+- Integrate Stripe Checkout to let people purchase products
 - Deploy app to Vercel
 
 Some items of note:
